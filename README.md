@@ -18,4 +18,12 @@ For each task:
    and other risks.
 5. A human reviews the result and decides whether to merge.
 
+## AI Workflow Checklist
+
+- [ ] Create a GitHub issue with a scoped task and acceptance criteria.
+- [ ] Have an implementation agent make the focused change.
+- [ ] Open a PR with a summary and verification notes.
+- [ ] Run a separate AI review of the diff.
+- [ ] Have a human review and merge after approval.
+
 See [docs/ai-agent-workflow.md](docs/ai-agent-workflow.md) for the fuller process.
