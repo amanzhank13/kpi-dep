@@ -1,0 +1,64 @@
+name: AI task
+description: Create a backlog item that an implementation agent can pick up.
+title: "[AI Task]: "
+labels:
+  - ai-ready
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should be true when this task is complete?
+      placeholder: "Example: Add password reset email validation to the signup flow."
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Link relevant code, docs, designs, errors, logs, or product decisions.
+      placeholder: "Relevant files, screenshots, customer report, design link, API docs..."
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List the observable requirements the implementation agent must satisfy.
+      placeholder: |
+        - User sees a clear validation message for invalid email.
+        - Existing signup behavior still works.
+        - Tests cover valid and invalid email cases.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Expected verification
+      description: Tell the agent which checks should pass.
+      placeholder: |
+        - npm test
+        - npm run lint
+        - Manual check: signup form in Chrome
+    validations:
+      required: false
+  - type: dropdown
+    id: size
+    attributes:
+      label: Size
+      options:
+        - Small
+        - Medium
+        - Large
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risk
+      options:
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true
