@@ -18,6 +18,8 @@ For each task:
    and other risks.
 5. A human reviews the result and decides whether to merge.
 
+Pull requests should receive AI review before they are merged by a human.
+
 ## AI Workflow Checklist
 
 - [ ] Create a GitHub issue with a scoped task and acceptance criteria.
